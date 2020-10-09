@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Country Capital</title>
+    <style type="text/css">
+        body{
+            padding: 100px;
+            margin: 20px;
+            text-align: center;
+            background-color: #bbbfff;
+            font-family: cursive;
+            
+        }
+    </style>
+</head>
+<body>
+<form >
+  <label style="color: white; font-size: 40px">Select Country</label>
+  <select id="country" style="color: #bbbfff; border-color: white; font-size: 30px; font-family: cursive;">
+    <option value="Delhi">India</option>
+    <option value="Paris">France</option>
+    <option value="Washington DC">USA</option>
+    <option value="Abu dhabi">Dubai</option>
+    <option value="Madrid">Spain</option>    
+  </select>
+
+</form>
+
+<p id=capital style="color: white; border-color: white; font-size: 40px;"></p>
+<button onclick="fun1()" style="color: #bbbfff; border-color: white; font-size: 30px; font-family: cursive; background-color: white;">click</button>
+<script type="text/javascript">
+    function fun1(){
+ var text1 = document.getElementById('country').value;
+ document.getElementById('capital').innerHTML = text1;
+}
+</script>
+</body>
+</html>
